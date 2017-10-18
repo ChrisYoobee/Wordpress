@@ -14,6 +14,8 @@ add_action( 'wp_enqueue_scripts', 'customThemeEnqueues' );
 function customThemeSetUp(){
 	add_theme_support('menus');
 	register_nav_menu('primary', 'This is the main navigation, positioned at the top of the page');
+	register_nav_menu('secondary', 'This is the secondary navigation, positioned at the bottom of the page');
+	register_nav_menu('catagories', 'This is the catagories navigation');
 }
 
 
@@ -28,7 +30,8 @@ $customHeaderSettings = array(
 	'flex-width' => true,
 	'default-text' => true,
 	'uploads' => true,
-	'video' => false
+	'video' => false,
+	'header-text' => true
 	);
 add_theme_support('custom-header', $customHeaderSettings);
 add_theme_support('post-thumbnails');
@@ -58,3 +61,27 @@ function customTheme_sidebar_setup(){
 }
 
 add_action('widgets_init', 'customTheme_sidebar_setup');
+
+
+//Customize Colours
+
+function customTheme_customise_colour($wp_customize){
+	//Settings
+	$wp_customize->add_setting('newtheme_text_colour', array(
+
+		'default' => '#000000',
+		'transport' => 'refresh'
+
+
+		));
+};
+
+add_action('customize_register','customTheme_customise_colour');
+
+
+
+
+
+
+
+

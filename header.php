@@ -17,3 +17,6 @@
 
 <?php wp_nav_menu(array('theme_location'=> 'primary')); ?>
 <div class="container">
+
+	<?php if(display_header_text()==true): ?>
+		

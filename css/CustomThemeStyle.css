@@ -10,6 +10,10 @@ h1{
 	color: black;
 }
 
+h3{
+	color: white;
+}
+
 .box{
 	width: 100px;
 	height: 100px;
@@ -60,3 +64,25 @@ li {
 .menu ul{
 	color: 
 }
+
+.menu-catagories-container{
+	width: 200px;
+}
+
+.box1{
+	width: 100%;
+	height: 20px;
+	background-color: brown;
+}
+
+
+.align{
+	
+}
+
+
+
+
+
+
+
