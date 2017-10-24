@@ -9,7 +9,7 @@
 
 <?php get_header(); ?>
 
-<h1>Custom Site</h1>
+
 <div class="row">
 	<div class="col-xs-12 col-sm-8">
 		<?php if(have_posts()): ?>

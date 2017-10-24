@@ -1,7 +1,9 @@
 	</div>
 	<footer>
-		<!-- <p>This is the footer of our site</p> -->
+		<p> <?php echo get_theme_mod('newTheme_footer_text'); ?> </p>
+		
 		<?php wp_nav_menu(array('theme_location'=> 'secondary')); ?>
+
 	</footer>
 
 <?php wp_footer(); ?>
