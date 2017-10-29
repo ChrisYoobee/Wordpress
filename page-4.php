@@ -1,4 +1,5 @@
 <!-- page-about.php -->
+<!-- Would highly recomend not using a specific page number for your page, Even though it is also a template, wordpress might get confused -->
 
 <?php 
 
